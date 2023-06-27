@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="/path/to/tailwind.min.css" rel="stylesheet">
+
+
+
+
+    <title>Student Enrollment Form</title>
+  </head>
+  <body class="bg-gradient-to-br from-pink-300 to-blue-500">
+    <div class="container mx-auto">
+      <h1 class="text-center text-4xl mt-10 text-white">Student Enrollment Form</h1>
+    </div>
+    <div class="flex">
+      <div class="w-1/2 bg-white p-8">
+          <form class="flex flex-col space-y-4">
+              <label for="Name" class="font-bold text-gray-800">Name:</label>
+              <input type="text" id="Name" placeholder="Name" name="Name" class="px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+
+              <label for="Email" class="font-bold text-gray-800">Email:</label>
+              <input type="email" id="Email" placeholder="mail-id" name="Email" class="px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+
+              <label for="website" class="font-bold text-gray-800">Website:</label>
+              <input type="text" id="website" placeholder="www.xyz.com" name="website" class="px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+
+              <label for="Image" class="font-bold text-gray-800">Image:</label>
+              <input type="file" id="Image" name="Image" class="custom-file-input" onchange="image(event)">
+
+              <label for="Gender" class="gender flex items-center">
+                  <p class="mr-2">Gender:</p>
+                  <input type="radio" name="Gender" id="Male" value="Male">
+                  <label for="Male" class="ml-1">Male</label>
+                  <input type="radio" name="Gender" id="Female" value="Female">
+                  <label for="Female" class="ml-1">Female</label>
+              </label>
+              <label for="Skills" class="skills flex items-center">
+                  <p class="mr-2">Skills:</p>
+                  <input type="checkbox" id="html" value="HTML">
+                  <label for="html" class="ml-1">HTML</label>
+
+                  <input type="checkbox" id="css" value="CSS">
+                  <label for="css" class="ml-1">CSS</label>
+
+                  <input type="checkbox" id="Javascript" value="Javascript">
+                  <label for="js" class="ml-1">Javascript</label>
+              </label>
+              <div class="btn flex justify-center">
+                  <button type="button" id="btn" class="button px-4 py-2 bg-gray-200 text-gray-800 rounded">Enroll Student</button>
+                  <button type="reset" class="button px-4 py-2 bg-gray-200 text-gray-800 rounded">Reset</button>
+              </div>
+          </form>
+      </div>
+      <div class="w-1/2 border-l-4 border-gray-300 px-8">
+          <h1 class="text-2xl text-white mt-8">Enrolled Students</h1>
+          <div class="cards"></div>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
