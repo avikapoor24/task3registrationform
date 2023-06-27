@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/task3registrationform/static/css/main.636492cc.css",
+    "main.js": "/task3registrationform/static/js/main.5c40cfd8.js",
+    "index.html": "/task3registrationform/index.html",
+    "main.636492cc.css.map": "/task3registrationform/static/css/main.636492cc.css.map",
+    "main.5c40cfd8.js.map": "/task3registrationform/static/js/main.5c40cfd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.636492cc.css",
+    "static/js/main.5c40cfd8.js"
+  ]
+}
